@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inov'Tech - Contact</title>
+    <link rel="stylesheet" href="../CSS/formulaire.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="../IMAGES/logo.png" alt="logo" />
+            <ul>
+                <li><a class="border" href="../HTML/inovtech.html">Accueil</a></li>
+                <li><a class="border" href="../HTML/formulaire.html">Contact</a></li>
+                <li><a class="border" href="../HTML/page-produit.html">Produit</a></li>
+                <li><a class="border" href="../HTML/panier.html">Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 style="text-align: center;">Des questions ?</h1>
+
+    <form action="../HTML/formulaire.html" method="get" class="contact-form">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="email">Adresse e-mail :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <div class="form-group">
+            <button type="button" onclick="alert('Votre question a bien été envoyé.');">Envoyer le message</button>
+        </div>
+    </form>
+
+    <footer>
+        <p>&copy; 2025 INOV'TECH. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>

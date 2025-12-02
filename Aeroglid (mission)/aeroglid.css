@@ -1,0 +1,155 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 2rem;
+    min-height: 100vh;
+    padding: 2rem;
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: url('aeroglid_hero.png') no-repeat center/cover fixed;
+    color: white;
+    text-align: center;
+}
+
+main{
+    grid-column: 1 / -1;
+    display: contents;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    font-size: 3rem;
+    background-image: linear-gradient(to right, #000, #999, #3370e2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 1rem 0 0.5rem;
+}
+
+h4 {
+    grid-column: 1 / -1;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    color: #45a1f2;
+    margin: 0;
+}
+section{
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.titre {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #00aaff;
+    font-weight: bold;
+    
+}
+
+.description, .conclusion {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
+}
+
+.image {
+    grid-column: 2 / 3;
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    border-radius: 2rem;
+    border: 2px solid white;
+    width: 20rem;
+    height: 20rem;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+section:last-of-type{
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.bouton {
+    grid-column: 1 / -1;
+    font-size: 1.2rem;
+    color: #4db6ff;
+    margin: 2rem 0 1rem;
+    text-align: center;
+}
+
+.ajouter {
+    grid-column: 1 / -1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4db6ff;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(77, 182, 255, 0.4);
+    transition: background-color 0.3s ease;
+}
+
+.ajouter:hover,
+.ajouter:focus {
+    background-color: #3399ff;
+    outline: none;
+}
+
+@media (max-width: 800px) {
+    body {
+        grid-template-columns: 1fr;
+        background-attachment: scroll;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    .image {
+        grid-column: 1;
+        grid-row: auto;
+        margin: 1rem 0;
+    }
+    .image img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    section {
+        text-align: center;
+    }
+
+    .description, .conclusion {
+        text-align: center;
+    }
+    .bouton {
+        font-size: 1rem;
+    }
+
+    .ajouter {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+
