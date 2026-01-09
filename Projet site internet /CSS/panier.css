@@ -1,0 +1,183 @@
+body {
+    background: url('../IMAGES/fond.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+     font-family: 'Roboto', Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+    line-height: 1.6;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+header { 
+    position: sticky; 
+    top: 0; 
+    margin-bottom: 2rem; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    background-color: rgb(193, 144, 76); 
+    padding: 0.5rem 1rem; 
+    box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+} 
+
+header nav { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%; } 
+
+#logo {
+    height: 3rem;
+    margin: 0;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease; 
+}
+
+#logo:hover {
+    transform: scale(1.05); 
+}
+
+nav ul { 
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    gap: 1rem; 
+} 
+
+nav a.border { 
+    color: black; 
+    text-decoration: none; 
+    padding: 0.3rem 0.5rem; 
+    border-radius: 0.3rem; 
+    transition: background 0.3s, color 0.3s; 
+} 
+
+nav a.border:hover { 
+    background-color: #fff; 
+    color: rgb(193, 144, 76); 
+} 
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.panier-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 62.5rem;
+}
+
+.bloc {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0.6rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+input, textarea {
+    border: 0.01rem solid #ccc;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.produit-ligne {
+    margin-bottom: 1rem;
+    background-color: rgba(255,255,255,0.7);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+.total {
+    text-align: right;
+    font-size: 1.3rem;
+    color: #222;
+}
+
+.paiement {
+    max-width: 62.5rem;
+    margin: 2rem auto;
+}
+
+.paiement-flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+button {
+  background-color: rgb(193, 144, 76); 
+  color: white;
+  border: none;
+  padding: 0.625rem 1.125rem; 
+  border-radius: 0.5rem; 
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: rgb(220, 165, 90); 
+  transform: scale(1.03);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(193, 144, 76);
+    color: black;
+    font-weight: bold;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+
+@media (max-width: 48rem) {
+    .panier-container {
+        grid-template-columns: 1fr;
+    }
+    .paiement-flex {
+        flex-direction: column;
+    }
+    nav a.border { 
+        display: inline-block; 
+        margin: 0.2rem 0; 
+    } 
+    header { 
+        text-align: center; 
+    } 
+    header nav { 
+        flex-direction: column; 
+        align-items: center; 
+    } 
+    #logo { 
+        margin: 0 auto 1rem auto; 
+        display: block; 
+    } 
+    nav ul { 
+        flex-direction: column; 
+        align-items: center; 
+        gap: 0.5rem; 
+    } 
+}
